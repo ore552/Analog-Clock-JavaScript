@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock JavaScript</title>
+    <link rel="stylesheet" href="clock.css" />
+    <script src="clock.js" defer></script>
+  </head>
+  <body>
+    <!-- The clock container with labels for each hour and the hands for hour, minute, and second. The mode switch is included for toggling dark mode. -->
+    <div class="container">
+        <!--Let us create the div that holds all the intervals of the clock-->
+      <div class="clock">
+        <label style="--i: 11"><span>1</span></label>
+        <label style="--i: 10"><span>2</span></label>
+        <label style="--i: 9"><span>3</span></label>
+        <label style="--i: 8"><span>4</span></label>
+        <label style="--i: 7"><span>5</span></label>
+        <label style="--i: 6"><span>6</span></label>
+        <label style="--i: 5"><span>7</span></label>
+        <label style="--i: 4"><span>8</span></label>
+        <label style="--i: 3"><span>9</span></label>
+        <label style="--i: 2"><span>10</span></label>
+        <label style="--i: 1"><span>11</span></label>
+        <label style="--i: 12"><span>12</span></label>
+        <!--Let's create the indicator hands to tell us what the time is with a div-->
+        <div class="indicator">
+            <!--The hour hand-->
+          <span class="hand hour"></span>
+            <!--The minute hand-->
+          <span class="hand minute"></span>
+            <!--The second hand-->
+          <span class="hand second"></span>
+        </div>
+      </div>
+      <!--This div can change the mode of the clock from light to dark-->
+      <div class="mode-switch">Dark Mode</div>
+    </div>
+  </body>
+</html>
